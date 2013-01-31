@@ -1,0 +1,30 @@
+Partlist
+
+Exported from atxpsudevboard_0-1.sch at 1/9/2012 9:30:20 AM
+
+EAGLE Version 6.0.0 Copyright (c) 1988-2011 CadSoft
+
+Assembly variant: 
+
+Part     Value /Newark No.  Device             Package           Library         Sheet
+
+F1       5A   16F1791       PTCFUSEMFR1100     MFR1100           RepRapjr        1
+F2       11A  60H8377       PTCFUSEMFR1100     MFR1100           RepRapjr        1
+F3       5A   16F1791       PTCFUSEMFR1100     MFR1100           RepRapjr        1
+F4       5A   16F1791       PTCFUSEMFR1100     MFR1100           RepRapjr        1
+F5       5A   16F1791       PTCFUSEMFR1100     MFR1100           RepRapjr        1
+H5       MOUNT-PAD-ROUND3.0 MOUNT-PAD-ROUND3.0 3,0-PAD           holes           1
+H6       MOUNT-PAD-ROUND3.0 MOUNT-PAD-ROUND3.0 3,0-PAD           holes           1
+H7       MOUNT-PAD-ROUND3.0 MOUNT-PAD-ROUND3.0 3,0-PAD           holes           1
+H8       MOUNT-PAD-ROUND3.0 MOUNT-PAD-ROUND3.0 3,0-PAD           holes           1
+J1       ATX24RH            ATX24RH            ATX24_RIGHT_ANGLE SparkFun        1
+JP1                         PINHD-1X2          1X02              pinhead         1
+JP2                         M06LONGPADS        1X06_LONGPADS     SparkFun        1
+LED1                        LED3MM             LED3MM            led             1
+LED2                        LED3MM             LED3MM            led             1
+R1       30R (5W) 16R2247   RHPS923            HPS923            resistor-power  1
+R2       22R (3W) 74M3349   RCA4050            CA4050            resistor-power  1
+R3       1K                 R-US_0207/7        0207/7            resistor        1
+R4       1K                 R-US_0207/7        0207/7            resistor        1
+X2       MSTBA10            MSTBA10            MSTBA10           con-phoenix-508 1
+         MSTBA pluggables for each 
