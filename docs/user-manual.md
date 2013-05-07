@@ -17,10 +17,10 @@ The following tools and materials are required to assemble the ATX PSU Dev Board
 
 Additional tools that might be helpful, but not required:
 
-- Lead bender
+- Lead bender (some 3D printable ones can be found online)
 
 ####Soldering
-If you do not have prior experience soldering, we recommend checking out a few of the following websites for some tutorials.
+If you do not have prior experience soldering, we recommend checking out a few of the following websites for tutorials.
 
 - <http://mightyohm.com/files/soldercomic/FullSolderComic_EN.pdf>
 - <http://www.ladyada.net/media/common/soldering.pdf>
@@ -31,7 +31,7 @@ If you do not have prior experience soldering, we recommend checking out a few o
 ###Assembly
 The components of this board will be inserted on the side with the outlines
 
-![Correct Side](./png/correct-side.png) ![Incorrect Side](./png/incorrect-side.png) 
+![Incorrect Side](./png/incorrect-side.png) 
   
 Begin by inserting the two 1k ohm resistors and the LEDs into the board. The LEDs should have the longest lead in the hole facing the resistor. If they are inserted incorrectly they will not work. This is because they are diodes. Resistors are not polarized components, so they can be inserted in orientation.
 
@@ -49,7 +49,7 @@ The fuses will be inserted next. They have a coating that slightly descends down
 
 ![Resetable Fuse](./png/fuse.png)
 
-In order to make a good connection the fuses should slightly hover over the holes. This is so the coating on the leads does not interfere with soldering. You want to bring the fuse above the board. You can do this with RepRap filament or something else, such as a long screw. The orientation of the fuses does not matter. 
+In order to make a good connection the fuses should slightly hover over the holes. This is so the coating on the leads does not interfere with soldering. You want to bring the fuse above the board. This can be done with RepRap filament or something else, such as a long screw. The orientation of the fuses does not matter. 
 
 ![Step 4](./png/step-04.png)
 
@@ -59,7 +59,7 @@ You can remove the filament.
 
 Now is a good opportunity to check that all connections were soldered well. Ideally the solder should wick up the lead onto the other side of the board. It should also have a nice tapered look. Add some flux and reheat the joint to touch-up the connections if needed. \\
 
-Now is a good opportunity to inspect the solder joints. Since the connectors and fuses on this board might carry a good amount of current you want a good solder flow. You can check the quality of the solder joint by looking at the other side of the leads. A good connection is shown on the left lead, with a potentially weak one on the right lead.
+Now is a good opportunity to inspect the solder joints. Since the connectors and fuses on this board might carry as much as 10 amps you want a good solder connection. You can check the quality of the solder joint by looking at the other side of the leads. A good connection is shown on the left lead, with a potentially weak one on the right lead.
 
 ![Solder Joint](./png/solder-joint.png)
 
