@@ -23,16 +23,16 @@ echo "Scaling selected images...";
 	done
 
 echo "Converting manual body to mediawiki...";
-	pandoc user-manual.md --to=mediawiki -o user-manual.mediawiki;
+	pandoc user-manual.md --to=mediawiki -o ./mediawiki/user-manual.mediawiki;
 
 echo "Making textual subsitutions for RepRap.org images...";
-	sed -i 's/Image:.\/png\//File:/g' user-manual.mediawiki;
+	sed -i 's/Image:.\/png\//File:/g' ./mediawiki/user-manual.mediawiki;
 
 echo "Converting manual body to LaTeX...";
-	pandoc user-manual.md --to=latex -o user-manual-body.tex;
+	pandoc user-manual.md --to=latex -o ./tex/user-manual-body.tex;
 
 echo "Hacks to fix the LaTeX...";
-	sed -i 's/htbp/H/g' user-manual-body.tex;
+	sed -i 's/htbp/H/g' ./tex/user-manual-body.tex;
 
 echo "Generating PDF from LaTeX...";
 	#run twice to get the TOC
