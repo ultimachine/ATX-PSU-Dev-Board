@@ -31,6 +31,9 @@ echo "Making textual subsitutions for RepRap.org images...";
 echo "Converting manual body to LaTeX...";
 	pandoc user-manual.md --to=latex -o user-manual-body.tex;
 
+echo "Hacks to fix the LaTeX...";
+	sed -i 's/htbp/H/g' user-manual-body.tex;
+
 echo "Generating PDF from LaTeX...";
 	#run twice to get the TOC
 	pdflatex user-manual.tex;
