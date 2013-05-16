@@ -2,7 +2,7 @@
 
 == What's in the box ==
 
-[[File:kit.png|frame|none|alt=|caption Bag Layout]]
+[[File:ATXDEVBOARDkit.png|frame|none|alt=|caption Bag Layout]]
 
 = Preparation =
 
@@ -34,75 +34,75 @@ If you do not have prior experience soldering, we recommend checking out a few o
 
 The components of this board will be inserted on the side with the outlines.
 
-[[File:correct-side.png|frame|none|alt=|caption Correct Side]]
+[[File:ATXDEVBOARDcorrect-side.png|frame|none|alt=|caption Correct Side]]
 
 == Step 1 ==
 
 Begin by inserting the two 1k ohm [http://en.wikipedia.org/wiki/Resistors resistors] and the [http://en.wikipedia.org/wiki/LED LEDs] into the board. The LEDs should have the longest lead in the hole facing the resistor. If they are inserted incorrectly they will not work. This is because they are diodes. Diodes only allow current to flow in one direction. Resistors are not [http://en.wikipedia.org/wiki/Electrical_polarity polarized] components, so they can be inserted in orientation.
 
-[[File:step-01.png|frame|none|alt=|caption Step 1]]
+[[File:ATXDEVBOARDstep-01.png|frame|none|alt=|caption Step 1]]
 
 == Step 2 ==
 
 Next flip over the board and solder the components in. You may need to slightly bend the leads to prevent the componets from falling out of the board.
 
-[[File:step-02.png|frame|none|alt=|caption Step 2]]
+[[File:ATXDEVBOARDstep-02.png|frame|none|alt=|caption Step 2]]
 
 == Step 3 ==
 
 Now that the components are soldered in and secure, you can cut the leads.
 
-[[File:step-03.png|frame|none|alt=|caption Step 3]]
+[[File:ATXDEVBOARDstep-03.png|frame|none|alt=|caption Step 3]]
 
 == Step 4 ==
 
 The [http://en.wikipedia.org/wiki/Fuse_%28electrical%29 fuses] will be inserted next. They have a coating that slightly descends down the leads as shown below.
 
-[[File:fuse.png|frame|none|alt=|caption Resetable Fuse]]
+[[File:ATXDEVBOARDfuse.png|frame|none|alt=|caption Resetable Fuse]]
 
 In order to make a good connection the fuses should slightly hover over the holes. This is so the coating on the leads does not interfere with soldering. You want to bring the fuse above the board. This can be done with RepRap filament or something else, such as a long screw. The orientation of the fuses does not matter.
 
-[[File:step-04.png|frame|none|alt=|caption Step 4]]
+[[File:ATXDEVBOARDstep-04.png|frame|none|alt=|caption Step 4]]
 
 == Step 5 ==
 
 You will need to remove the filament before continuing.
 
-[[File:step-05.png|frame|none|alt=|caption Step 5]]
+[[File:ATXDEVBOARDstep-05.png|frame|none|alt=|caption Step 5]]
 
 Now is a good opportunity to inspect the solder joints. Since the connectors and fuses on this board might carry as much as 10 amps you want a good solder connection. You can check the quality of the solder joint by looking at the other side of the leads. A good connection is shown on the left lead, with a potentially weak one on the right lead. Add some [http://en.wikipedia.org/wiki/Flux_%28metallurgy%29 flux] and reheat the joint to touch-up the connections if needed.
 
-[[File:solder-joint.png|frame|none|alt=|caption Solder Joint]]
+[[File:ATXDEVBOARDsolder-joint.png|frame|none|alt=|caption Solder Joint]]
 
 == Step 6 ==
 
 Next you will want to solder in the remaining resistors. Again, orientation does not matter for resistors.
 
-[[File:step-06.png|frame|none|alt=|caption Step 6]]
+[[File:ATXDEVBOARDstep-06.png|frame|none|alt=|caption Step 6]]
 
 == Header Pin Preparation ==
 
 Next locate the header pins in the parts bag. You will need to break them into a strip of 6 and 2 as shown below. This can be done with flush cutters.
 
-[[File:header-break.png|frame|none|alt=|caption Split header pins]]
+[[File:ATXDEVBOARDheader-break.png|frame|none|alt=|caption Split header pins]]
 
 == Step 7 ==
 
 Solder the header pins as shown.
 
-[[File:step-07.png|frame|none|alt=|caption Step 7]]
+[[File:ATXDEVBOARDstep-07.png|frame|none|alt=|caption Step 7]]
 
 == Step 8 ==
 
 Add the recieving end for the pluggable headers.
 
-[[File:step-08.png|frame|none|alt=|caption Step 8]]
+[[File:ATXDEVBOARDstep-08.png|frame|none|alt=|caption Step 8]]
 
 == Step 9 ==
 
 Next you will want to add the ATX connector. It has barbs on the housing that should clip onto the circuit board. Make sure the connector is well seated before soldering.
 
-[[File:step-09.png|frame|none|alt=|caption Step 9]]
+[[File:ATXDEVBOARDstep-09.png|frame|none|alt=|caption Step 9]]
 
 You have now completed assembly of the ATX PSU Dev Board!
 
@@ -110,15 +110,15 @@ You have now completed assembly of the ATX PSU Dev Board!
 
 In order to turn the power supply on, a jumper between &quot;PS ON&quot; and &quot;GND&quot; must be added. Optionally, this can be connected to a micro controller.
 
-[[File:step-10.png|frame|none|alt=|caption PS_ON Jumper]]
+[[File:ATXDEVBOARDstep-10.png|frame|none|alt=|caption PS_ON Jumper]]
 
 When an ATX power supply is connected to the board and turned on the &quot;PW OK&quot; and &quot;5V&quot; light will turn on. Otherwise if not turned on but connected, just the &quot;5V&quot; light will be on.
 
-[[File:step-11.png|frame|none|alt=|caption Testing a power supply]]
+[[File:ATXDEVBOARDstep-11.png|frame|none|alt=|caption Testing a power supply]]
 
 Finally you can connect the pluggable headers into the board and power your project!
 
-[[File:step-12.png|frame|none|alt=|caption Pluggable headers inserted]]
+[[File:ATXDEVBOARDstep-12.png|frame|none|alt=|caption Pluggable headers inserted]]
 
 = Source =
 
