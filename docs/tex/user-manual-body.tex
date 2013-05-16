@@ -1,8 +1,6 @@
-\section{Overview}
+\section{Introduction}
 
-\subsection{Introduction}
-
-\subsubsection{What's in the box}
+\subsection{What's in the box}
 
 \begin{figure}[H]
 \centering
@@ -10,11 +8,9 @@
 \caption{Bag Layout}
 \end{figure}
 
-\subsection{Assembly}
+\section{Preparation}
 
-\subsubsection{Preparation}
-
-\paragraph{Tools}
+\subsection{Tools}
 
 The following tools and materials are required to assemble the ATX PSU
 Dev Board:
@@ -37,7 +33,7 @@ Additional tools that might be helpful, but not required:
   Lead bender (some 3D printable ones can be found online)
 \end{itemize}
 
-\paragraph{Soldering}
+\subsection{Soldering}
 
 If you do not have prior experience soldering, we recommend checking out
 a few of the following websites for tutorials.
@@ -56,22 +52,30 @@ a few of the following websites for tutorials.
   \url{http://radiojove.gsfc.nasa.gov/telescope/soldering.htm}
 \end{itemize}
 
-\subsubsection{Assembly}
+\section{Assembly}
+
+\subsection{Board Orientation}
 
 The components of this board will be inserted on the side with the
-outlines
+outlines.
 
 \begin{figure}[H]
 \centering
-\includegraphics{./png/incorrect-side.png}
-\caption{Incorrect Side}
+\includegraphics{./png/correct-side.png}
+\caption{Correct Side}
 \end{figure}
 
-Begin by inserting the two 1k ohm resistors and the LEDs into the board.
-The LEDs should have the longest lead in the hole facing the resistor.
-If they are inserted incorrectly they will not work. This is because
-they are diodes. Resistors are not polarized components, so they can be
-inserted in orientation.
+\subsection{Step 1}
+
+Begin by inserting the two 1k ohm
+\href{http://en.wikipedia.org/wiki/Resistors}{resistors} and the
+\href{http://en.wikipedia.org/wiki/LED}{LEDs} into the board. The LEDs
+should have the longest lead in the hole facing the resistor. If they
+are inserted incorrectly they will not work. This is because they are
+diodes. Diodes only allow current to flow in one direction. Resistors
+are not
+\href{http://en.wikipedia.org/wiki/Electrical_polarity}{polarized}
+components, so they can be inserted in orientation.
 
 \begin{figure}[H]
 \centering
@@ -79,7 +83,11 @@ inserted in orientation.
 \caption{Step 1}
 \end{figure}
 
-Next flip over the board and solder the components in.
+\subsection{Step 2}
+
+Next flip over the board and solder the components in. You may need to
+slightly bend the leads to prevent the componets from falling out of the
+board.
 
 \begin{figure}[H]
 \centering
@@ -87,7 +95,9 @@ Next flip over the board and solder the components in.
 \caption{Step 2}
 \end{figure}
 
-Now that the components are soldered in and secure you can cut the
+\subsection{Step 3}
+
+Now that the components are soldered in and secure, you can cut the
 leads.
 
 \begin{figure}[H]
@@ -96,8 +106,11 @@ leads.
 \caption{Step 3}
 \end{figure}
 
-The fuses will be inserted next. They have a coating that slightly
-descends down the leads.
+\subsection{Step 4}
+
+The \href{http://en.wikipedia.org/wiki/Fuse_\%28electrical\%29}{fuses}
+will be inserted next. They have a coating that slightly descends down
+the leads as shown below.
 
 \begin{figure}[H]
 \centering
@@ -117,7 +130,9 @@ orientation of the fuses does not matter.
 \caption{Step 4}
 \end{figure}
 
-You can remove the filament.
+\subsection{Step 5}
+
+You will need to remove the filament before continuing.
 
 \begin{figure}[H]
 \centering
@@ -125,22 +140,22 @@ You can remove the filament.
 \caption{Step 5}
 \end{figure}
 
-Now is a good opportunity to check that all connections were soldered
-well. Ideally the solder should wick up the lead onto the other side of
-the board. It should also have a nice tapered look. Add some flux and
-reheat the joint to touch-up the connections if needed. \textbackslash{}
-
 Now is a good opportunity to inspect the solder joints. Since the
 connectors and fuses on this board might carry as much as 10 amps you
 want a good solder connection. You can check the quality of the solder
 joint by looking at the other side of the leads. A good connection is
 shown on the left lead, with a potentially weak one on the right lead.
+Add some
+\href{http://en.wikipedia.org/wiki/Flux_\%28metallurgy\%29}{flux} and
+reheat the joint to touch-up the connections if needed.
 
 \begin{figure}[H]
 \centering
 \includegraphics{./png/solder-joint.png}
 \caption{Solder Joint}
 \end{figure}
+
+\subsection{Step 6}
 
 Next you will want to solder in the remaining resistors. Again,
 orientation does not matter for resistors.
@@ -150,6 +165,8 @@ orientation does not matter for resistors.
 \includegraphics{./png/step-06.png}
 \caption{Step 6}
 \end{figure}
+
+\subsection{Header Pin Preparation}
 
 Next locate the header pins in the parts bag. You will need to break
 them into a strip of 6 and 2 as shown below. This can be done with flush
@@ -161,6 +178,8 @@ cutters.
 \caption{Split header pins}
 \end{figure}
 
+\subsection{Step 7}
+
 Solder the header pins as shown.
 
 \begin{figure}[H]
@@ -169,6 +188,8 @@ Solder the header pins as shown.
 \caption{Step 7}
 \end{figure}
 
+\subsection{Step 8}
+
 Add the recieving end for the pluggable headers.
 
 \begin{figure}[H]
@@ -176,6 +197,8 @@ Add the recieving end for the pluggable headers.
 \includegraphics{./png/step-08.png}
 \caption{Step 8}
 \end{figure}
+
+\subsection{Step 9}
 
 Next you will want to add the ATX connector. It has barbs on the housing
 that should clip onto the circuit board. Make sure the connector is well
@@ -191,17 +214,28 @@ You have now completed assembly of the ATX PSU Dev Board!
 
 \section{Usage}
 
+In order to turn the power supply on, a jumper between ``PS ON'' and
+``GND'' must be added. Optionally, this can be connected to a micro
+controller.
+
 \begin{figure}[H]
 \centering
 \includegraphics{./png/step-10.png}
 \caption{PS\_ON Jumper}
 \end{figure}
 
+When an ATX power supply is connected to the board and turned on the
+``PW OK'' and ``5V'' light will turn on. Otherwise if not turned on but
+connected, just the ``5V'' light will be on.
+
 \begin{figure}[H]
 \centering
 \includegraphics{./png/step-11.png}
 \caption{Testing a power supply}
 \end{figure}
+
+Finally you can connect the pluggable headers into the board and power
+your project!
 
 \begin{figure}[H]
 \centering
@@ -210,3 +244,15 @@ You have now completed assembly of the ATX PSU Dev Board!
 \end{figure}
 
 \section{Source}
+
+The source for the ATX PSU Dev Board can be found in the UltiMachine
+repositories on GitHub.com at
+\url{https://github.com/ultimachine/ATX-PSU-Dev-Board}.
+
+\section{Issues}
+
+Product support inquiries can be directed to
+\href{mailto:info@ultimachine.com}{info@ultimachine.com}. In the event
+there is an error in the documentation or problem with the board, please
+report the issue to the bug tracker at
+\url{https://github.com/ultimachine/ATX-PSU-Dev-Board/issues}.

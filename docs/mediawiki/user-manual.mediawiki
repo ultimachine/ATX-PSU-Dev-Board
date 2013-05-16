@@ -1,16 +1,12 @@
-= Overview =
+= Introduction =
 
-== Introduction ==
-
-=== What's in the box ===
+== What's in the box ==
 
 [[File:kit.png|frame|none|alt=|caption Bag Layout]]
 
-== Assembly ==
+= Preparation =
 
-=== Preparation ===
-
-==== Tools ====
+== Tools ==
 
 The following tools and materials are required to assemble the ATX PSU Dev Board:
 
@@ -22,7 +18,7 @@ Additional tools that might be helpful, but not required:
 
 * Lead bender (some 3D printable ones can be found online)
 
-==== Soldering ====
+== Soldering ==
 
 If you do not have prior experience soldering, we recommend checking out a few of the following websites for tutorials.
 
@@ -32,25 +28,35 @@ If you do not have prior experience soldering, we recommend checking out a few o
 * http://www.sparkfun.com/tutorials/106
 * http://radiojove.gsfc.nasa.gov/telescope/soldering.htm
 
-=== Assembly ===
+= Assembly =
 
-The components of this board will be inserted on the side with the outlines
+== Board Orientation ==
 
-[[File:incorrect-side.png|frame|none|alt=|caption Incorrect Side]]
+The components of this board will be inserted on the side with the outlines.
 
-Begin by inserting the two 1k ohm resistors and the LEDs into the board. The LEDs should have the longest lead in the hole facing the resistor. If they are inserted incorrectly they will not work. This is because they are diodes. Resistors are not polarized components, so they can be inserted in orientation.
+[[File:correct-side.png|frame|none|alt=|caption Correct Side]]
+
+== Step 1 ==
+
+Begin by inserting the two 1k ohm [http://en.wikipedia.org/wiki/Resistors resistors] and the [http://en.wikipedia.org/wiki/LED LEDs] into the board. The LEDs should have the longest lead in the hole facing the resistor. If they are inserted incorrectly they will not work. This is because they are diodes. Diodes only allow current to flow in one direction. Resistors are not [http://en.wikipedia.org/wiki/Electrical_polarity polarized] components, so they can be inserted in orientation.
 
 [[File:step-01.png|frame|none|alt=|caption Step 1]]
 
-Next flip over the board and solder the components in.
+== Step 2 ==
+
+Next flip over the board and solder the components in. You may need to slightly bend the leads to prevent the componets from falling out of the board.
 
 [[File:step-02.png|frame|none|alt=|caption Step 2]]
 
-Now that the components are soldered in and secure you can cut the leads.
+== Step 3 ==
+
+Now that the components are soldered in and secure, you can cut the leads.
 
 [[File:step-03.png|frame|none|alt=|caption Step 3]]
 
-The fuses will be inserted next. They have a coating that slightly descends down the leads.
+== Step 4 ==
+
+The [http://en.wikipedia.org/wiki/Fuse_%28electrical%29 fuses] will be inserted next. They have a coating that slightly descends down the leads as shown below.
 
 [[File:fuse.png|frame|none|alt=|caption Resetable Fuse]]
 
@@ -58,31 +64,41 @@ In order to make a good connection the fuses should slightly hover over the hole
 
 [[File:step-04.png|frame|none|alt=|caption Step 4]]
 
-You can remove the filament.
+== Step 5 ==
+
+You will need to remove the filament before continuing.
 
 [[File:step-05.png|frame|none|alt=|caption Step 5]]
 
-Now is a good opportunity to check that all connections were soldered well. Ideally the solder should wick up the lead onto the other side of the board. It should also have a nice tapered look. Add some flux and reheat the joint to touch-up the connections if needed. \
-
-Now is a good opportunity to inspect the solder joints. Since the connectors and fuses on this board might carry as much as 10 amps you want a good solder connection. You can check the quality of the solder joint by looking at the other side of the leads. A good connection is shown on the left lead, with a potentially weak one on the right lead.
+Now is a good opportunity to inspect the solder joints. Since the connectors and fuses on this board might carry as much as 10 amps you want a good solder connection. You can check the quality of the solder joint by looking at the other side of the leads. A good connection is shown on the left lead, with a potentially weak one on the right lead. Add some [http://en.wikipedia.org/wiki/Flux_%28metallurgy%29 flux] and reheat the joint to touch-up the connections if needed.
 
 [[File:solder-joint.png|frame|none|alt=|caption Solder Joint]]
+
+== Step 6 ==
 
 Next you will want to solder in the remaining resistors. Again, orientation does not matter for resistors.
 
 [[File:step-06.png|frame|none|alt=|caption Step 6]]
 
+== Header Pin Preparation ==
+
 Next locate the header pins in the parts bag. You will need to break them into a strip of 6 and 2 as shown below. This can be done with flush cutters.
 
 [[File:header-break.png|frame|none|alt=|caption Split header pins]]
+
+== Step 7 ==
 
 Solder the header pins as shown.
 
 [[File:step-07.png|frame|none|alt=|caption Step 7]]
 
+== Step 8 ==
+
 Add the recieving end for the pluggable headers.
 
 [[File:step-08.png|frame|none|alt=|caption Step 8]]
+
+== Step 9 ==
 
 Next you will want to add the ATX connector. It has barbs on the housing that should clip onto the circuit board. Make sure the connector is well seated before soldering.
 
@@ -92,11 +108,23 @@ You have now completed assembly of the ATX PSU Dev Board!
 
 = Usage =
 
+In order to turn the power supply on, a jumper between &quot;PS ON&quot; and &quot;GND&quot; must be added. Optionally, this can be connected to a micro controller.
+
 [[File:step-10.png|frame|none|alt=|caption PS_ON Jumper]]
 
+When an ATX power supply is connected to the board and turned on the &quot;PW OK&quot; and &quot;5V&quot; light will turn on. Otherwise if not turned on but connected, just the &quot;5V&quot; light will be on.
+
 [[File:step-11.png|frame|none|alt=|caption Testing a power supply]]
+
+Finally you can connect the pluggable headers into the board and power your project!
 
 [[File:step-12.png|frame|none|alt=|caption Pluggable headers inserted]]
 
 = Source =
+
+The source for the ATX PSU Dev Board can be found in the UltiMachine repositories on GitHub.com at https://github.com/ultimachine/ATX-PSU-Dev-Board.
+
+= Issues =
+
+Product support inquiries can be directed to [mailto:info@ultimachine.com info@ultimachine.com]. In the event there is an error in the documentation or problem with the board, please report the issue to the bug tracker at https://github.com/ultimachine/ATX-PSU-Dev-Board/issues.
 
