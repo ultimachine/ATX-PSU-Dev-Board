@@ -22,7 +22,8 @@
 
 \newcommand{\HRule}[1]{\hfill \rule{0.2\linewidth}{#1}} % Horizontal rule at the bottom of the page, adjust width here
 \renewcommand{\familydefault}{\sfdefault}
-
+\let\ORIincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{\ORIincludegraphics[scale=0.7,#1]{#2}}
 \begin{document}
 
 \begin{titlepage}
