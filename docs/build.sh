@@ -26,7 +26,7 @@ echo "Converting manual body to mediawiki...";
 	pandoc user-manual.md --to=mediawiki -o ./mediawiki/user-manual.mediawiki;
 
 echo "Making textual subsitutions for RepRap.org images...";
-	sed -i 's/Image:.\/png\//File:/g' ./mediawiki/user-manual.mediawiki;
+	sed -i 's/Image:.\/png\//File:ATXDEVBOARD/g' ./mediawiki/user-manual.mediawiki;
 
 echo "Converting manual body to LaTeX...";
 	pandoc user-manual.md --to=latex -o ./tex/user-manual-body.tex;
